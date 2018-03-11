@@ -24,6 +24,6 @@ If you are new to running Angular apps here is [official documentation](https://
 ## TODO
 * If possible - change favicon during the look away period -> Have usually opened many tabs and this would help me to 
 * Place all the logic into custom component -> Currently part of app.component.
-** Write better installation manual for component transfer ( what is necessary to transfer into different project )
+  * Write better installation manual for component transfer ( what is necessary to transfer into different project )
 * Write message to look away in the green bar -> Subconscious command.
 * Replace images with images with URL and tab so people have better idea how does it look.
