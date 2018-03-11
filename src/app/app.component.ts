@@ -12,52 +12,54 @@ export class AppComponent implements OnInit {
   m = 0;
   minute = '00';
   second = '00';
-  work = true;
+  lookToComputer = true;
+  lookAway = false;
 
   ngOnInit() {
     const engine = timer(2000, 1000);
-    engine.subscribe(tick => this.clock(tick));
+    engine.subscribe(() => this.clock());
   }
 
-  clock(tick) {
-    if (this.work === true) {
-      this.workFunc(tick);
+  clock() {
+    if (this.lookToComputer === true) {
+      this.workFunc();
     } else {
-      this.lookAwayFunc(tick);
+      this.lookAwayFunc();
     }
   }
 
-  workFunc(tick) {
+  workFunc() {
     console.log(this);
     // original
-    // this.s = this.s + 1;
+    this.s = this.s + 1;
     // test
-    this.s = this.s + 60;
+    // this.s = this.s + 60;
     if ( this.s % 60 === 0) {
       this.s = 0;
       this.second = ('0' + this.s).slice(-2);
       // original
-      // this.m = this.m + 1;
+      this.m = this.m + 1;
       // test
-      this.m = this.m + 5;
+      // this.m = this.m + 5;
       this.minute = ('0' + this.m).slice(-2);
       if (this.m % 20 === 0) {
         this.s = 0;
         this.m = 0;
         this.second = '00';
         this.minute = '00';
-        this.work = false;
+        this.lookToComputer = false;
+        this.lookAway = true;
       }
     }
     this.second = ('0' + this.s).slice(-2);
   }
 
-  lookAwayFunc(tick) {
+  lookAwayFunc() {
     console.log('Look Away');
     // original
-    // this.s = this.s + 1;
-    // test
     this.s = this.s + 1;
+    // test
+    // this.s = this.s + 1;
     if ( this.s % 20 === 0) {
       this.s = 0;
       this.second = ('0' + this.s).slice(-2);
@@ -65,9 +67,18 @@ export class AppComponent implements OnInit {
       this.m = 0;
       this.second = '00';
       this.minute = '00';
-      this.work = true;
-
+      this.lookToComputer = true;
+      this.lookAway = false;
     }
     this.second = ('0' + this.s).slice(-2);
+  }
+
+  resetClock() {
+    this.s = 0;
+    this.m = 0;
+    this.minute = '00';
+    this.second = '00';
+    this.lookToComputer = true;
+    this.lookAway = false;
   }
 }
