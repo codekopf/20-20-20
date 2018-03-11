@@ -11,6 +11,8 @@ Information bar is counting first 20 minutes of your working time with computer 
 Information bar change background for 20 seconds as a visual help to look away on object at least 20 feet away:  
 ![alt text](https://raw.githubusercontent.com/codekopf/20-20-20/1d69025e3b0af57b98df855ea605ac5202dc299b/lookAway.png)
 
+Cyclus repeat infinitely. If you leave and return, you can hit the reset button to reset the counter.    
+
 ## How to run it?
 
 This project was generated with Angular CLI, so there is a lot of redundant code.
