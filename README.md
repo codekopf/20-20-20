@@ -17,6 +17,6 @@ Cyclus repeat infinitely. If you leave and return, you can hit the reset button 
 
 This project was generated with Angular CLI, so there is a lot of redundant code.
 
-If you want just to use it, first download it and then just run in your terminal `ng serve` command. Navigate to `http://localhost:4200/` and have a browser opened during your work with the computer screen. 
+If you want just to use it, first download it and then just run in your terminal `ng serve` command. Navigate to `http://localhost:5000/` and have a browser opened during your work with the computer screen. The Angular app runs at port 5000, so you can develop other apps alongside ;) 
  
 If you are new to running Angular apps here is [official documentation](https://angular.io/guide/setup) for how to run the Angular app.
