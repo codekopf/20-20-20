@@ -20,3 +20,10 @@ This project was generated with Angular CLI, so there is a lot of redundant code
 If you want just to use it, first download it and then just run in your terminal `ng serve` command. Navigate to `http://localhost:5000/` and have a browser opened during your work with the computer screen. The Angular app runs at port 5000, so you can develop other apps alongside ;) 
  
 If you are new to running Angular apps here is [official documentation](https://angular.io/guide/setup) for how to run the Angular app.
+
+## TODO
+* If possible - change favicon during the look away period -> Have usually opened many tabs and this would help me to 
+* Place all the logic into custom component -> Currently part of app.component.
+** Write better installation manual for component transfer ( what is necessary to transfer into different project )
+* Write message to look away in the green bar -> Subconscious command.
+* Replace images with images with URL and tab so people have better idea how does it look.
