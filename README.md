@@ -2,6 +2,8 @@
 
 If you are working with computer screens a lot, this is a simple Angular 2 project which will help you to reduce eye strain and eye fatigue.
 
+You can find working module [here](http://bit.ly/2FVKIu6).
+
 ## What is 20-20-20 rule?
 **Every 20 minutes, take a 20-second break and focus your eyes on something at least 20 feet away.**
 
@@ -17,13 +19,19 @@ Cyclus repeat infinitely. If you leave and return, you can hit the reset button 
 
 This project was generated with Angular CLI, so there is a lot of redundant code.
 
-If you want just to use it, first download it and then just run in your terminal `ng serve` command. Navigate to `http://localhost:5000/` and have a browser opened during your work with the computer screen. The Angular app runs at port 5000, so you can develop other apps alongside ;) 
+If you want just to use it, first download it and then just run in your terminal `ng serve` command. Navigate to `http://localhost:4200/` and have a browser opened during your work with the computer screen. The Angular app runs at port 5000, so you can develop other apps alongside ;) 
  
 If you are new to running Angular apps here is [official documentation](https://angular.io/guide/setup) for how to run the Angular app.
+
+## Demo
+Quick trick - I have build production version of this module and attached files into this GitHub repository. 
+You can check this module stright from your browser anytime you want. Check the page http://htmlpreview.github.io/?https://github.com/codekopf/20-20-20/blob/master/dist/index.html - [link](http://htmlpreview.github.io/?https://github.com/codekopf/20-20-20/blob/master/dist/index.html).)
+
+
 
 ## TODO
 * If possible - change favicon during the look away period -> Have usually opened many tabs and this would help me to 
 * Place all the logic into custom component -> Currently part of app.component.
   * Write better installation manual for component transfer ( what is necessary to transfer into different project )
 * Write message to look away in the green bar -> Subconscious command.
-* Replace images with images with URL and tab so people have better idea how does it look.
+* Replace bar images with images with URL and tab so people have better idea how does it look.
