@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { timer } from 'rxjs/observable/timer';
+import { DOCUMENT } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-twtwtw',
@@ -13,8 +15,12 @@ export class TwtwtwComponent implements OnInit {
   second = '00';
   lookToComputer = true;
   lookAway = false;
+  lookAwayText = '';
+
+  constructor(@Inject(DOCUMENT) private _document: HTMLDocument) {}
 
   ngOnInit() {
+    this._document.getElementById('appFavicon').setAttribute('href', '/assets/icon/blue.ico');
     const engine = timer(2000, 1000);
     engine.subscribe(() => this.clock());
   }
@@ -48,6 +54,8 @@ export class TwtwtwComponent implements OnInit {
         this.minute = '00';
         this.lookToComputer = false;
         this.lookAway = true;
+        this.lookAwayText = 'Look away from screen!';
+        this._document.getElementById('appFavicon').setAttribute('href', '/assets/icon/green.ico');
       }
     }
     this.second = ('0' + this.s).slice(-2);
@@ -68,6 +76,8 @@ export class TwtwtwComponent implements OnInit {
       this.minute = '00';
       this.lookToComputer = true;
       this.lookAway = false;
+      this.lookAwayText = '';
+      this._document.getElementById('appFavicon').setAttribute('href', '/assets/icon/blue.ico');
     }
     this.second = ('0' + this.s).slice(-2);
   }
@@ -81,20 +91,3 @@ export class TwtwtwComponent implements OnInit {
     this.lookAway = false;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
