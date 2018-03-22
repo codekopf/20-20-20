@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-md fixed-top bg-success text-white" [ngClass]="{ 'bg-primary': false == lookAway , 'bg-success': true == lookAway }" >
+  <span class="navbar-brand" href="#"> <i *ngIf="lookAway" class="fas fa-eye-slash"></i><i *ngIf="!lookAway" class="fas fa-eye"></i> {{ minute }} : {{ second }}</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"></li>
+    </ul>
+  </div>
+  <button type="button" class="btn btn-light btn-sm" (click)="resetClock()">Reset</button>
+</nav>
