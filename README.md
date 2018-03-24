@@ -28,7 +28,3 @@ If you are new to running Angular apps here is [official documentation](https://
 ## Demo
 I have build production version of this module and attached files into this GitHub repository. 
 You can check this module straight from your browser anytime you want. Check the page http://htmlpreview.github.io/?https://github.com/codekopf/20-20-20/blob/master/dist/index.html .
-
-## TODO
-* Replace bar images with images with URL and tab, so people have better idea how does it look.
- 

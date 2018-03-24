@@ -54,7 +54,7 @@ export class TwtwtwComponent implements OnInit {
         this.minute = '00';
         this.lookToComputer = false;
         this.lookAway = true;
-        this.lookAwayText = 'Look away from screen!';
+        this.lookAwayText = 'Look away from the screen!';
         this._document.getElementById('appFavicon').setAttribute('href', '/assets/icon/green.ico');
       }
     }
